@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <title>Spotify-Web Player: Music for everyone</title>
+</head>
+<body>
+    
+    <!-- ..........Sidebar................ -->
+
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href=""><img src="./img/logo-new.png" alt=""></a>
+            </div>
+
+            <ul>
+                <li class="home"><a href="">
+                    <div><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</div>
+                </a></li>
+
+                <li class="search"><a href="">
+                    <div><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>Search</div>
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-nav box2">
+            <ul>
+                <li class="your-library">
+                    <a href="">
+                        <span><i class="fa-solid fa-book" style="color: #b3b3b3;"></i></span>
+                        <span class="library">Your Library</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="scroll">
+                        <div class="playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy, we'll help you</p>
+                            <button>Create playlist</button>
+                        </div>
+
+                        <div class="playlist">
+                            <h4>Let's find some podcasts to follow</h4>
+                            <p>We'll keep you updated on new episodes</p>
+                            <button class="browse" data-link2="https://open.spotify.com/genre/podcasts-web">Browse podcast</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="privacy-policy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy Center</a>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href=""> Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="eng-btn">
+                <button><i class="fa-solid fa-globe" style="color: #ffffff;"></i>English</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ..............Main body............... -->
+
+    <div class="main-section">
+
+        <div class="top-nav">
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="login-btn">
+                <button class="sign-up">Sign-Up</button>
+                <button class="login">Log in</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 84px;" class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Popular Artist</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card">
+                <div class="item" data-link="https://open.spotify.com/artist/3eDT9fwXKuHWFvgZaaYC5v">
+                    <img class="artist" src="https://i.scdn.co/image/ab6761610000e5eb21a9a4198a25ad25ff3c45ff" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Sundihi Chauhan</h2>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item" style="object-fit: contain;" data-link="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">
+                    <img class="artist" src="./img/Arijit Singh.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Arijit Singh</h2>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
+                    <img class="artist" src="./img/ar-rahman.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">A.R Rahman</h2>
+                    <p>Artist</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
+                    <img class="artist" src="./img/Vishal Mishra.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Vishal Mishra</h2>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo">
+                    <img class="artist" src="./img/seedhe-maut.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Seedhe Maut</h2>
+                    <p>Artist</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/artist/5C1S9XwxMuuCciutwMhp5t">
+                    <img class="artist" src="./img/kr$na.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Kr$na</h2>
+                    <p>Artist</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Popular Album</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card">
+                <div class="item" data-link="https://open.spotify.com/album/0a183xiCHiC1GQd8ou7WXO">
+                    <img src="./img/animal.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>ANIMAL</h2>
+                    <p>Manan Bharadwaj, Vishal Mishra, Jaani</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/album/5AivaZj0CiQJoDWqVH2pbh">
+                    <img src="./img/shubh.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>Still Rollin</h2>
+                    <p>Shubh</p>
+                </div>
+
+                <div class="item" data-links="https://open.spotify.com/album/45ZIondgVoMB84MQQaUo9T">
+                    <img src="./img/moosoo.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>Moosetape</h2>
+                    <p>Siddhu Moosewala</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/album/1d1FYLFpu2NITI6ilVaHDd">
+                    <img src="./img/lalkara.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>Ghost</h2>
+                    <p>Diljit Doshanj</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/album/3BGU0BqGwBkYDHpfCWFm7I">
+                    <img src="./img/karan aujla.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>Making Memories</h2>
+                    <p>Karan Aujla, Ikky</p>
+                </div>
+
+                <div class="item" data-links="https://open.spotify.com/album/0LcyzKKw3RjFKL6ygISTeU">
+                    <img src="./img/baadsha.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2>Ek tha Raja</h2>
+                    <p>Badshah</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Popular Radio</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card">
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD">
+                    <img src="./img/Arijit-radio.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 15px;">Arijijt Singh Radio</h3>
+                    <p>With Neha Kakkar, Pritam, KK and more</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1E4AnYVmEEo8ws">
+                    <img src="./img/diljit-radio.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 15px;">Diljit Dosanjh Ra..</h2>
+                    <p>With Garry Sandhu, Ranjit Bawa, Amrinder Gill and ... </p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1E4wrEODYq2x5q">
+                    <img src="./img/kumar-sanu.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 15px;">Kumar Sanu Radio</h2>
+                    <p>With Udit Narayan, Alka Yagnik,... </p>
+                </div>
+            
+                <div class="item" data-links="https://open.spotify.com/playlist/37i9dQZF1E4y2lYBEyU5jq">
+                    <img src="./img/sidhu.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 14px;">Sidhu Moose Wal... </h2>
+                    <p>With Ammy Virk, Amrit Maan, Karan Aujla...</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1E4xzuMPqbCJfm">
+                    <img src="./img/kk.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 15px;">KK Radio</h2>
+                    <p>With Mohit Chauhan, Ankit Tiwari, Javed Ali and more</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1E4yiJGrYbYs2x">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/5r3wPya2PpeTTsXsGhQU8O/en" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 15px;">Shubh Radio</h2>
+                    <p>With AP Dhillon, Gurinder Gill, Ikky and more</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Featured Charts</h2>
+            </div>
+
+            <div class="card" data-link="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF">
+                <div class="item">
+                    <img src="./img/region_global_default.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 14.8px;">Top Songs - Global</h2>
+                    <p>Your weekly update of the most played tracks right now - Global.</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI">
+                    <img src="./img/region_us_default.jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16.6px;">Top Songs - USA</h2>
+                    <p>Your weekly update of the most played tracks right now - USA.</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF">
+                    <img src="./img/region_global_default (1).jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 18px;">Top 50 - Global</h2>
+                    <p>Your daily update of the most played tracks right now - Global.</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp">
+                    <img src="./img/region_us_default (1).jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Top 50 - USA</h2>
+                    <p>Your daily update of the most played tracks right now - USA.</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp">
+                    <img src="./img/region_global_default (2).jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 16px;">Viral 50 -  Global</h2>
+                    <p>Your daily update of the most viral tracks right now - Global.</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZEVXbKuaTI1Z1Afx">
+                    <img src="./img/region_us_default (2).jpg" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;"> vIral 50 - USA </h2>
+                    <p>
+                        Playlist
+                        Your daily update of the most viral tracks right now - USA.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Spotify Playlists</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card" data-link="https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC">
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Happy Hits</h2>
+                    <p> Hits to boost your mood and fill you...</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1DXaImRpG7HXqp">
+                    <img src="https://i.scdn.co/image/ab67706f00000002d8fe1c03afc22a01d5109233" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Calming Acou...</h2>
+                    <p>Keep calm with instrumental acoustic...</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1DWUa8ZRTfalHk">
+                    <img src="https://i.scdn.co/image/ab67706f000000024bde29ae545af98e61fe9c4f" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Pop Rising</h2>
+                    <p>Who's now and next in pop. Cover: Good...</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1DWYoYGBbGKurt">
+                    <img src="https://i.scdn.co/image/ab67706f0000000263ef641f3fa47592fe798e91" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px">Lofi Chill</h2>
+                    <p>The biggest songs of the 2020s.</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1DWYoYGBbGKurt">
+                    <img src="https://i.scdn.co/image/ab67706f000000028d2c0fbb4e007f6dac9db559" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Indie Rock Hits</h2>
+                    <p>True indie rock hits</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/playlist/37i9dQZF1DWXe9gFZP0gtP">
+                    <img src="https://i.scdn.co/image/ab67706f0000000231ca8abcbff3f5a3eb1fd339" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Stress Relief</h2>
+                    <p>Calm your mind from anxiety with gentle piano and ambient music.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Spotify orignal & exclusive shows</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card">
+                <div class="item" data-link="https://open.spotify.com/show/6ZcvVBPQ2ToLXEWVbaw59P">
+                    <img src="https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">The Ranveer S...</h2>
+                    <p>BeerBiceps</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/show/7kXTwW1xCVei6efFjQgINx">
+                    <img src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Shri Krishna..</h2>
+                    <p>Spotify Studios</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk">
+                    <img src="https://i.scdn.co/image/ab67656300005f1f9f2d87dfc8198ad84728893a" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">The Joe Rogan..</h2>
+                    <p>Joe Rogan</p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/show/2vhxApfLLtI8yCd7hqPokR">
+                    <img src="https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">The Horro Sho..</h2>
+                    <p>TMV Studios</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/show/4vS5KRYWFT9xTUlO8XOAj5">
+                    <img src="https://i.scdn.co/image/ab67656300005f1f58e730e8341e29ca0f0671fe" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Pertkotha <span>&#40</span>Ben..</h2>
+                    <p>Gourab Tapadar</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/show/6wUJkXMlCHsqCY1WAtwsm1">
+                    <img src="https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">True Story Bro!..</h2>
+                    <p>Spotify</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+
+            <div class="heading">
+            <h2>Trending Episodes</h2>
+            <h5>Show All</h5>
+            </div>
+
+            <div class="card">
+                <div class="item" data-link="https://open.spotify.com/episode/6Gl5Y62Znq3M1Fn8ywYRjz">
+                    <img src="https://i.scdn.co/image/ab67656300005f1fe46079c9a5b7c544c6922ac9" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Welcome back...</h2>
+                    <p>Naallaana Murkku =  The RJ Balaji Podcast </p>
+                </div>
+            
+                <div class="item" data-link="https://open.spotify.com/episode/2nLOsuQXZL4oBbzbYQYYro">
+                    <img src="https://i.scdn.co/image/ab6765630000ba8a099a357ed0a2a39424f2903d" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">#73: Hotel Of..</h2>
+                    <p>Rotten Mango</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/episode/7JEJp2uiED0PsKDwf0vo77">
+                    <img src="https://i.scdn.co/image/ab67656300005f1f21f7ead44047173302bc912e" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Anubis: God o...</h2>
+                    <p>I Hear You with Aahana Kumra<span>&#40</span>Hindi Thriller Podcast<span>&#41</span></p>
+                </div>
+            
+                <div class="item" data-links="https://open.spotify.com/episode/7JEJp2uiED0PsKDwf0vo77">
+                    <img src="https://i.scdn.co/image/ab67656300005f1ff875734f742a55ac2dd62637" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Anubis: God o...</h2>
+                    <p>I Hear You with Aahana Kumra<span>&#40</span>Hindi Thriller Podcast<span>&#41</span></p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/episode/1x1YHdOpYAjwR48eoz1yLL">
+                    <img src="https://i.scdn.co/image/ab6765630000ba8a36dbb0b2d65004488fcc322f" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Mahabharata...</h2>
+                    <p>The stories of Mahabharata</p>
+                </div>
+
+                <div class="item" data-link="https://open.spotify.com/episode/4ZjiY5692n0Nev7q38tMvB">
+                    <img style="height: 136px;" src="https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play" style="color: #000000;"></i></span>
+                    </div>
+                    <h2 style="font-size: 17px;">Relaxing Rain...</h2>
+                    <p>Let's find out</p>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- ..............footer body............... -->
+
+        <div class="footer-part">
+            <div class="footer">
+                <div class="footer-links">
+                    
+                    <div class="footer-column">
+                        <div>Company</div>
+                        <ul class="col-links">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the Record</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div>Communities</div>
+                        <ul class="col-links">
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div>Useful links</div>
+                        <ul class="col-links">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free Mobile App</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div>Spotify Plans</div>
+                        <ul class="col-links">
+                            <li><a href="">Premium Individual</a></li>
+                            <li><a href="">Premium Duo</a></li>
+                            <li><a href="">Premium Family</a></li>
+                            <li><a href="">Premium Student</a></li>
+                            <li><a href="">Spotify Free</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="social-media-links">
+                    <div>
+                        <span style="color: #fcfcfc; font-family: Arial, Helvetica, sans-serif; font-weight: 700;">Made By:</span>
+                        <a href="https://www.instagram.com/_parth_who/"><i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i></a>
+                        <a href="https://www.linkedin.com/in/parth-chaturvedi-6247b9297/" target="blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <a href="https://twitter.com/ParthCh76478205?t=M7glt9YDM4Oy1NJFOlk70g&s=08"><i class="fa-brands fa-twitter" style="color: #fcfcfc;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class="copyright"> &#169; 2024 Spotify AB</p>
+        </div>
+
+    </div>
+
+    <div class="gradient">
+        <div class="texts">
+            <h4>Preview of Spotify</h4>
+            <p>Sign up to get unlimeted sonngs and podcasts with occassional ads. No credit card needed.</p>
+        </div>
+        <div class="button">
+            <button>Sign Up Free</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
