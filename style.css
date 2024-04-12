@@ -334,6 +334,7 @@
         margin-bottom: 10px;
         width: 137px;
         height: 137px;
+        object-fit: cover;
     }
 
     .spotify-playlist .card .item img{
